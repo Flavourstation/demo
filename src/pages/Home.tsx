@@ -36,7 +36,7 @@ const Home = () => {
             At Flavour Station, we bring you the finest Indian cuisine served in a one-of-a-kind
              way—delivered straight to your table by charming miniature trains.</p>
             <h2 className="bg-amber-400 text-black px-2 py-1 rounded-full text-3xl font-bold mb-4">
-              Our Mission  & Vision</h2>
+              Our Mission </h2>
             <p className="text-xl mb-8">Our mission is to create a dining experience where every guest enjoys meals made from the freshest ingredients, cooked to perfection, and served with warmth. From our kitchen to your table, we deliver nothing but the best!</p>
                         
             <p className="text-xl mb-8">Our vision is to bring the heart and soul of Indian food to every plate, connecting people across cultures through the universal language of taste</p>
