@@ -6,6 +6,21 @@ import  butterchicken from '../images/butterchicken1.jpg';
 import manchurian from '../images/manchurian1.jpg';
 import shahipaneer from '../images/shahipaneer.jpeg';
 import karahipaneer from '../images/karahipaneer.jfif';
+import chickenbriyani from '../images/chickenbriyani.jpeg';
+import eggbriyani from '../images/eggbriyani.jfif';
+import vegbriyani from '../images/vegbriyani.jfif';
+import friedrice from '../images/friedrice.jpg';
+import jeerarice from '../images/jeerarice.jfif';
+import plainrice from '../images/plainrice.jfif';
+import chillychicken from '../images/chillychicken.jpg';
+import chickentikkamasala from '../images/chickentikkamasala.jfif';
+import chillypaneer from '../images/chillypaneer.jfif';
+import butternan from '../images/butternaan.jfif';
+import garlicnan from '../images/garlicnan.jfif';
+import plainnan from '../images/plainnan.jfif';
+import lachhaparantha from '../images/lachhaparantha.jfif';
+import tawaroti from '../images/tawaroti.jfif';
+
 
 
 /* <images /> */
@@ -48,6 +63,14 @@ const MenuPage = () => {
           isVegetarian: true
         },
         {
+          name: 'Chilli Paneer',
+          description: 'Paneer with bell peppers and onions in spicy sauces',
+          price: 19.99,
+          image: chillypaneer,
+          isSpicy: true,
+          isVegetarian: true
+        },
+        {
           name: 'Veg Manchurian',
           description: 'Deep-fried vegetable balls immered in a tangy, spicy sauce.',
           price: 17.99,
@@ -57,7 +80,7 @@ const MenuPage = () => {
         }
       ]
     },
-    {
+      {
       name: 'Non Vegetarian',
       items: [
         {
@@ -75,7 +98,124 @@ const MenuPage = () => {
           image: karahichicken,
           isSpicy: true,
           isVegetarian: false
+        },
+        {
+          name: 'Chilly Chicken',
+          description: ' Chicken cooked with bell peppers and onion in spicy sauces',
+          price: 19.99,
+          image: chillychicken,
+          isSpicy: true,
+          isVegetarian: false
+        },
+        {
+          name: 'Chicken Tikka Masala',
+          description: 'Roasted Chicken with Gravy',
+          price: 19.99,
+          image: chickentikkamasala,
+          isSpicy: true,
+          isVegetarian: false
         }
+        
+      ]
+    },
+    {
+      name: 'Rice',
+      items: [
+        {
+          name: 'Chicken Briyani',
+          description: 'Rice cooked with chicken & spices',
+          price: 15.99,
+          image: chickenbriyani,
+          isSpicy: true,
+          isVegetarian: false
+        },
+        {
+          name: 'Egg Briyani',
+          description: 'Rice cooked with boiled eggs and spices',
+          price: 15.99,
+          image: eggbriyani,
+          isSpicy: true,
+          isVegetarian: false
+        },
+        {
+          name: 'Veg Briyani',
+          description: 'Rice cooked with vegetables',
+          price: 15.99,
+          image: vegbriyani,
+          isSpicy: false,
+          isVegetarian: true
+        },
+        {
+          name: 'Fried rice',
+          description: 'Rice cooked with carrots and beans',
+          price: 11.99,
+          image: friedrice,
+          isSpicy: true,
+          isVegetarian: true
+        },
+        {
+          name: 'Jeera Rice',
+          description: 'Rice cooked with cumin seeds',
+          price: 9.99,
+          image: jeerarice,
+          isSpicy: false,
+          isVegetarian: true
+        },
+        {
+          name: 'Plain Rice',
+          description: 'Bioled Rice',
+          price: 9.99,
+          image: plainrice,
+          isSpicy: false,
+          isVegetarian: true
+        }
+        
+      ]
+    },
+    {
+      name: 'Breads',
+      items: [
+        {
+          name: 'Butter Naan',
+          description: 'Butter bread baked in tandoor',
+          price: 4.99,
+          image: butternan,
+          isSpicy: false,
+          isVegetarian: true
+        },
+        {
+          name: 'Lachha Parantha',
+          description: 'Crispy layered Indian flatbread',
+          price: 4.99,
+          image: lachhaparantha,
+          isSpicy: false,
+          isVegetarian: true
+        },
+        {
+          name: 'Garlic Naan',
+          description: 'Garlic tandoori flatbread )',
+          price: 4.99,
+          image: garlicnan,
+          isSpicy: false,
+          isVegetarian: true
+        },
+        {
+          name: 'Plain Naan',
+          description: 'Plain tandoori flatbread',
+          price: 3.99,
+          image: plainnan,
+          isSpicy: false,
+          isVegetarian: true
+        },
+        {
+          name: 'Tawa Roti',
+          description: 'Flat bread cooked on Pan',
+          price: 2.99,
+          image: tawaroti,
+          isSpicy: false,
+          isVegetarian: true
+        }
+        
         
       ]
     }

@@ -34,9 +34,9 @@ const Navbar = () => {
             >
               Menu
             </Link>
-            <Link to="/offers" className="bg-red-800 text-white px-6 py-2 rounded-full hover:bg-amber-900 transition-colors">
+          {/*  <Link to="/offers" className="bg-red-800 text-white px-6 py-2 rounded-full hover:bg-amber-900 transition-colors">
               Offers
-            </Link>
+            </Link> */}
             <Link to="/contact" className="bg-red-800 text-white px-6 py-2 rounded-full hover:bg-amber-900 transition-colors">
               Contact Us
             </Link>

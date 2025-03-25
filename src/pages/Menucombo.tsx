@@ -1,11 +1,11 @@
 import React from 'react';
-import dal from '../images/dal.jpg';
-import chanamasala from '../images/chanamasala.jfif';
-import karahichicken from '../images/karahichicken.jfif';
-import  butterchicken from '../images/butterchicken1.jpg';
-import manchurian from '../images/manchurian1.jpg';
-import shahipaneer from '../images/shahipaneer.jpeg';
-import karahipaneer from '../images/karahipaneer.jfif';
+import makki from '../images/makki.jpg';
+import bhatura from '../images/bhatura.jpg';
+import poori from '../images/poori.jfif';
+import ricemanchurian from '../images/ricemanchurian.jfif';
+import pastacombo from '../images/pastacombo.jpg';
+import fingerfries from '../images/fingersfries.jpg';
+import kulcha from '../images/kulcha1.jpg';
 
 
 /* <images /> */
@@ -13,72 +13,69 @@ import karahipaneer from '../images/karahipaneer.jfif';
 const MenuPage = () => {
   const menuCategories = [
     {
-      name: 'Vegetarian',
+      name: ' ',
       items: [
         {
-          name: 'Dal Makhni',
-          description: 'Black lentils and kidney beans slow-cooked and enriched with cream',
-          price: 17.99,
-          image: dal,
+          name: 'Makki di Roti with Saag and Lassi',
+          description: 'Corn flatbread with mashed mustard leaves and spinach ',
+          price: 19.99,
+          image: makki,
           isSpicy: false,
           isVegetarian: true
         },
         {
-          name: 'Chana Masala',
-          description: 'Chickpeas cooked with gravy and spices',
-          price: 17.99,
-          image: chanamasala,
+          name: 'Poori Chana',
+          description: 'Deep-fried bread with chickpeas curry',
+          price: 11.99,
+          image: poori,
           isSpicy: true,
           isVegetarian: true
         },
         {
-          name: 'Karahi Paneer',
-          description: 'Indian cottage cheese with gravy, onions and bell peppers ',
-          price: 19.99,
-          image: karahipaneer,
+          name: 'Chana Bhatura',
+          description: 'Fried bread with chickpeas curry ',
+          price: 11.99,
+          image: bhatura,
           isSpicy: true,
           isVegetarian: true
         },
         {
-          name: 'Shahi Paneer',
-          description: 'Indian cottage cheese cooked in a creamy gravy with  tomatoes and onions',
-          price: 19.99,
-          image: shahipaneer,
-          isSpicy: false,
+          name: 'Amritsari Kulcha with Chana',
+          description: 'Aloo-paneer stuffed paratha with chickpeas curry ',
+          price: 11.99,
+          image: kulcha,
+          isSpicy: true,
           isVegetarian: true
         },
         {
-          name: 'Veg Manchurian',
-          description: 'Deep-fried vegetable balls immered in a tangy, spicy sauce.',
-          price: 17.99,
-          image: manchurian,
+          name: 'Fried Rice with Veg Manchurian',
+          description: 'Rice with vegetables  with tangy vegetable balls in gravy',
+          price: 11.99,
+          image: ricemanchurian,
           isSpicy: true,
           isVegetarian: true
-        }
-      ]
-    },
-    {
-      name: 'Non Vegetarian',
-      items: [
+        },
         {
-          name: 'Butter Chicken',
-          description: 'Boneless chicken cooked in a buttery tomato-based sauce',
-          price: 19.99,
-          image: butterchicken,
+          name: 'French fries and Chicken fingers',
+          description: 'Fried chicken and Fried potatoes',
+          price: 11.99,
+          image: fingerfries,
           isSpicy: false,
           isVegetarian: false
         },
         {
-          name: 'Karahi Chicken',
-          description: 'Boneless Chicken cooked with onions, bell peppers and tomato sauce',
-          price: 19.99,
-          image: karahichicken,
-          isSpicy: true,
+          name: 'Pasta, fries, chicken fingers and noodles',
+          description: 'Flavored Pasta, Veg noodles with fried chicken and potatoes',
+          price: 13.99,
+          image: pastacombo,
+          isSpicy: false,
           isVegetarian: false
         }
-        
       ]
     }
+        
+      
+    
   ];
 
   return (

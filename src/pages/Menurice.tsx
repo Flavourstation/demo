@@ -1,11 +1,9 @@
 import React from 'react';
-import dal from '../images/dal.jpg';
-import chanamasala from '../images/chanamasala.jfif';
-import karahichicken from '../images/karahichicken.jfif';
-import  butterchicken from '../images/butterchicken1.jpg';
-import manchurian from '../images/manchurian1.jpg';
-import shahipaneer from '../images/shahipaneer.jpeg';
-import karahipaneer from '../images/karahipaneer.jfif';
+import gajjarhalwa from '../images/gajjarhalwa.jfif';
+import gulabjamun from '../images/gulabjamun1.jfif';
+import rasmalai from '../images/rasmalai.jfif';
+import icecream from '../images/icecream.jfif';
+
 
 
 /* <images /> */
@@ -13,70 +11,36 @@ import karahipaneer from '../images/karahipaneer.jfif';
 const MenuPage = () => {
   const menuCategories = [
     {
-      name: 'Vegetarian',
+      name: '',
       items: [
         {
-          name: 'Dal Makhni',
-          description: 'Black lentils and kidney beans slow-cooked and enriched with cream',
-          price: 17.99,
-          image: dal,
-          isSpicy: false,
-          isVegetarian: true
+          name: 'Gajjar Ka Halwa',
+          description: 'Grated carrots cooked with milk and sugar ',
+          price: 7.99,
+          image: gajjarhalwa,
+          
         },
         {
-          name: 'Chana Masala',
-          description: 'Chickpeas cooked with gravy and spices',
-          price: 17.99,
-          image: chanamasala,
-          isSpicy: true,
-          isVegetarian: true
+          name: 'Gulab Jamun (2Pcs)',
+          description: 'Fried Dough balls soaked in sugar syrup',
+          price: 7.99,
+          image: gulabjamun,
+          
         },
         {
-          name: 'Karahi Paneer',
-          description: 'Indian cottage cheese with gravy, onions and bell peppers ',
-          price: 19.99,
-          image: karahipaneer,
-          isSpicy: true,
-          isVegetarian: true
+          name: 'Ras Malai (2Pcs)',
+          description: 'Flavored cheese cake in milk ',
+          price: 7.99,
+          image: rasmalai,
+          
         },
         {
-          name: 'Shahi Paneer',
-          description: 'Indian cottage cheese cooked in a creamy gravy with  tomatoes and onions',
-          price: 19.99,
-          image: shahipaneer,
-          isSpicy: false,
-          isVegetarian: true
-        },
-        {
-          name: 'Veg Manchurian',
-          description: 'Deep-fried vegetable balls immered in a tangy, spicy sauce.',
-          price: 17.99,
-          image: manchurian,
-          isSpicy: true,
-          isVegetarian: true
+          name: 'Ice Cream',
+          description: '7 different flavours of Icecream',
+          price: 7.99,
+          image: icecream,
+          
         }
-      ]
-    },
-    {
-      name: 'Non Vegetarian',
-      items: [
-        {
-          name: 'Butter Chicken',
-          description: 'Boneless chicken cooked in a buttery tomato-based sauce',
-          price: 19.99,
-          image: butterchicken,
-          isSpicy: false,
-          isVegetarian: false
-        },
-        {
-          name: 'Karahi Chicken',
-          description: 'Boneless Chicken cooked with onions, bell peppers and tomato sauce',
-          price: 19.99,
-          image: karahichicken,
-          isSpicy: true,
-          isVegetarian: false
-        }
-        
       ]
     }
   ];

@@ -9,7 +9,9 @@ import Offers from './pages/Offers';
 import Contact from './pages/Contact';
 import MenuPageapp from './pages/Menuapp';
 import MenuPagemain from './pages/Menumain';
-
+import MenuPagecombo from './pages/Menucombo';
+import MenuPagedrinks from './pages/Menudrinks';
+import MenuPageice from './pages/Menurice';
 
 function App() {
   return (
@@ -39,7 +41,9 @@ function App() {
             <Route path="/menu" element={<MenuPage />} />
             <Route path="/menuapp" element={<MenuPageapp/>} />
             <Route path="/menumain" element={<MenuPagemain/>} />
-           
+            <Route path="/menucombo" element={<MenuPagecombo/>} />
+            <Route path="/menudrinks" element={<MenuPagedrinks/>} />
+            <Route path="/menuice" element={<MenuPageice/>} />
             <Route path="/offers" element={<Offers />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

@@ -10,6 +10,7 @@ import mpasta from '../images/mpasta.jfif';
 import ctikka from '../images/chickentikka.jpg';
 import cfingers from '../images/chickenfingers.jfif';
 import tchicken from '../images/tandoorichicken.jpg';
+import fishpakora from '../images/fishpakora.jfif';
 
 /* <images /> */
 
@@ -117,6 +118,14 @@ const MenuPage1 = () => {
           description: 'Marinated Chicken cooked in a tandoor (clay oven)',
           price: 14.99,
           image: tchicken,
+          isSpicy: true,
+          isVegetarian: false
+        },
+        {
+          name: 'Fish Pakora(8 Pcs)',
+          description: 'Crispy, spiced, deep-fried fish bites',
+          price: 14.99,
+          image: fishpakora,
           isSpicy: true,
           isVegetarian: false
         }
