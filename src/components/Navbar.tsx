@@ -1,22 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import Logo from '../images/logo.jpg';
 import Name from '../images/name1.png';
-
-
-
 
 
 const Navbar = () => {
   return (
     <nav className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-2 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
-          <img src={Logo} alt="Company Logo" className="w-40 h-28 mx-auto" />
-          <img src={Name} alt="name" className="w-50 h-28 mx-auto" />
-         
+          <img src={Logo} alt="Company Logo" className="w-55 h-40 mx-auto" />
+          <img src={Name} alt="name" className="w-35 h-28 mx-auto" />
           </Link>
           
           
@@ -37,7 +32,7 @@ const Navbar = () => {
           {/*  <Link to="/offers" className="bg-red-800 text-white px-6 py-2 rounded-full hover:bg-amber-900 transition-colors">
               Offers
             </Link> */}
-            <Link to="/contact" className="bg-red-800 text-white px-6 py-2 rounded-full hover:bg-amber-900 transition-colors">
+            <Link to="/contact" className="inline-flex bg-red-800 text-white px-6 py-2 rounded-full hover:bg-amber-900 transition-colors">
               Contact Us
             </Link>
            

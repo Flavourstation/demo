@@ -23,6 +23,12 @@ function App() {
             <div className="flex items-center gap-2">
               <MapPin size={32} />
               <span>1001 Langs Dr (Hespler & Langs), Cambridge, ON N1R 7K7</span>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <Phone className="text-white-800" size={24} />
+                                
+                                  <h3 className="font-semibold">Phone</h3>
+                                  <p className="text-white-600">+1 (647) 766-3929</p>
+                                
             </div>
             <div className="flex items-center gap-2">
               <Mail size={32} />

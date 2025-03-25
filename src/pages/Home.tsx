@@ -4,8 +4,9 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import foodImage from '../images/food.jpg';
-import offersimage from '../images/offers.jpg';
+import offersimage from '../images/butterchicken1.jpg';
 import menuimage from '../images/butterchicken1.jpg';
+import restaurant from '../images/restaurant.jpg';
 
 
 
@@ -76,7 +77,7 @@ const Home = () => {
             <img
               src={offersimage}
               alt="Our Menu"
-              className="w-full h-65 object-cover"
+              className="w-100 h-60 object-cover"
             />
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">Our Menu</h3>
@@ -92,9 +93,9 @@ const Home = () => {
 
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80"
+              src={restaurant}
               alt="Contact Us"
-              className="w-full h-65 object-cover"
+              className="w-100 h-60 object-cover"
             />
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">Contact Us</h3>
