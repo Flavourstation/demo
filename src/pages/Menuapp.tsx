@@ -12,6 +12,7 @@ import ctikka from '../images/chickentikka.jpg';
 import cfingers from '../images/chickenfingers.jfif';
 import tchicken from '../images/tandoorichicken.jpg';
 import fishpakora from '../images/fishpakora.jfif';
+import frenchfries from '../images/frenchfries.jfif';
 
 const MenuPage1 = () => {
   const menuCategories = [
@@ -86,7 +87,7 @@ const MenuPage1 = () => {
           name: 'French Fries',
           description: 'Fresh potatoes cut into thin strips and perfectly fried',
           price: 7.99,
-          image: vegburger,
+          image: frenchfries,
           isSpicy: false,
           isVegetarian: true,
         },
