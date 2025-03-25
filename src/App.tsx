@@ -1,6 +1,8 @@
+
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Menu, MapPin, Mail, Phone } from 'lucide-react';
+import { MapPin, Mail, Phone } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -17,39 +19,36 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
-        {/* Top Bar */}
-        <div className="bg-red-800 text-white py-3 px-2">
-          <div className="container mx-auto flex justify-between items-center text-sm">
-            <div className="flex items-center gap-2">
-              <MapPin size={32} />
+        <div className="fixed top-0 left-0 w-full bg-red-800 text-white py-3 px-2 z-50 shadow-md">
+          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
+              <MapPin size={20} />
               <span>1001 Langs Dr (Hespler & Langs), Cambridge, ON N1R 7K7</span>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <Phone className="text-white-800" size={24} />
-                                
-                                  <h3 className="font-semibold">Phone</h3>
-                                  <p className="text-white-600">+1 (647) 766-3929</p>
-                                
+              <Phone size={20} className="ml-4" />
+              <span className="font-semibold">Phone:</span>
+              <span>+1 (647) 766-3929</span>
             </div>
-            <div className="flex items-center gap-2">
-              <Mail size={32} />
+            <div className="flex items-center gap-2 mt-2 md:mt-0">
+              <Mail size={20} />
               <span>info@flavourstation.ca</span>
             </div>
           </div>
-
-          
         </div>
 
-        <Navbar />
+        <div className="pt-[72px]">
+          <Navbar />
+        </div>
 
         <main className="flex-grow">
           <Routes>
+          <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/menu" element={<MenuPage />} />
-            <Route path="/menuapp" element={<MenuPageapp/>} />
-            <Route path="/menumain" element={<MenuPagemain/>} />
-            <Route path="/menucombo" element={<MenuPagecombo/>} />
-            <Route path="/menudrinks" element={<MenuPagedrinks/>} />
-            <Route path="/menuice" element={<MenuPageice/>} />
+            <Route path="/menuapp" element={<MenuPageapp />} />
+            <Route path="/menumain" element={<MenuPagemain />} />
+            <Route path="/menucombo" element={<MenuPagecombo />} />
+            <Route path="/menudrinks" element={<MenuPagedrinks />} />
+            <Route path="/menuice" element={<MenuPageice />} />
             <Route path="/offers" element={<Offers />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
@@ -62,3 +61,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+

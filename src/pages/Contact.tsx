@@ -49,8 +49,7 @@ const Contact = () => {
             
             <div className="h-[400px] w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968524045!3d40.757977142857454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMCc0NC43IkwgNzPCsDU5JzA2LjQiVw!5e0!3m2!1sen!2sus!4v1589994337544!5m2!1sen!2sus"
-                width="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.052828000311!2d-80.33096732483601!3d43.401779771115095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b89b66a07e4b7%3A0x1fcd527fba572def!2s1001%20Langs%20Dr%2C%20Cambridge%2C%20ON%20N1R%207K7!5e1!3m2!1sen!2sca!4v1742926527348!5m2!1sen!2sca" 
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
