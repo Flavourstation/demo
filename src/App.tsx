@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { MapPin, Mail, Phone } from 'lucide-react';
@@ -19,29 +17,29 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
-        <div className="fixed top-0 left-0 w-full bg-red-800 text-white py-3 px-2 z-50 shadow-md">
-          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm gap-2">
-            <div className="flex items-center gap-2 flex-wrap">
-              <MapPin size={20} />
-              <span>1001 Langs Dr (Hespler & Langs), Cambridge, ON N1R 7K7</span>
-              <Phone size={20} className="ml-4" />
-              <span className="font-semibold">Phone:</span>
-              <span>+1 (647) 766-3929</span>
-            </div>
-            <div className="flex items-center gap-2 mt-2 md:mt-0">
-              <Mail size={20} />
-              <span>info@flavourstation.ca</span>
+        <header className="fixed top-0 left-0 w-full z-50">
+          <div className="bg-red-800 text-white py-3 px-6 shadow-md">
+            <div className="container mx-auto flex flex-wrap md:flex-nowrap justify-between items-center text-sm sm:text-base gap-2">
+              <div className="flex items-center gap-2 flex-wrap">
+                <MapPin size={20} />
+                <span>1001 Langs Dr (Hespler &amp; Langs), Cambridge, ON N1R 7K7</span>
+                <Phone size={20} className="md:ml-4" />
+                <span className="font-semibold">Phone:</span>
+                <span>+1 (647) 766-3929</span>
+              </div>
+              <div className="flex items-center gap-2 mt-2 md:mt-0 flex-wrap">
+                <Mail size={20} />
+                <span>info@flavourstation.ca</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="pt-[72px]">
           <Navbar />
-        </div>
+        </header>
 
-        <main className="flex-grow">
+        <main className="pt-[140px] flex-grow">
           <Routes>
-          <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/menu" element={<MenuPage />} />
             <Route path="/menuapp" element={<MenuPageapp />} />
@@ -61,8 +59,4 @@ function App() {
 }
 
 export default App;
-
-
-
-
 

@@ -25,7 +25,7 @@ import tawaroti from '../images/tawaroti.jfif';
 
 /* <images /> */
 
-const MenuPage = () => {
+const MenuPage4 = () => {
   const menuCategories = [
     {
       name: 'Vegetarian',
@@ -126,48 +126,42 @@ const MenuPage = () => {
           description: 'Rice cooked with chicken & spices',
           price: 15.99,
           image: chickenbriyani,
-          isSpicy: true,
-          isVegetarian: false
+         
         },
         {
           name: 'Egg Briyani',
           description: 'Rice cooked with boiled eggs and spices',
           price: 15.99,
           image: eggbriyani,
-          isSpicy: true,
-          isVegetarian: false
+         
         },
         {
           name: 'Veg Briyani',
           description: 'Rice cooked with vegetables',
           price: 15.99,
           image: vegbriyani,
-          isSpicy: false,
-          isVegetarian: true
+        
         },
         {
           name: 'Fried rice',
           description: 'Rice cooked with carrots and beans',
           price: 11.99,
           image: friedrice,
-          isSpicy: true,
-          isVegetarian: true
+         
         },
         {
           name: 'Jeera Rice',
           description: 'Rice cooked with cumin seeds',
           price: 9.99,
           image: jeerarice,
-          isSpicy: false,
-          isVegetarian: true
+          
         },
         {
           name: 'Plain Rice',
           description: 'Bioled Rice',
           price: 9.99,
           image: plainrice,
-          isSpicy: false,
-          isVegetarian: true
+         
         }
         
       ]
@@ -180,40 +174,35 @@ const MenuPage = () => {
           description: 'Butter bread baked in tandoor',
           price: 4.99,
           image: butternan,
-          isSpicy: false,
-          isVegetarian: true
+          
         },
         {
           name: 'Lachha Parantha',
           description: 'Crispy layered Indian flatbread',
           price: 4.99,
           image: lachhaparantha,
-          isSpicy: false,
-          isVegetarian: true
+         
         },
         {
           name: 'Garlic Naan',
           description: 'Garlic tandoori flatbread )',
           price: 4.99,
           image: garlicnan,
-          isSpicy: false,
-          isVegetarian: true
+       
         },
         {
           name: 'Plain Naan',
           description: 'Plain tandoori flatbread',
           price: 3.99,
           image: plainnan,
-          isSpicy: false,
-          isVegetarian: true
+          
         },
         {
           name: 'Tawa Roti',
           description: 'Flat bread cooked on Pan',
           price: 2.99,
           image: tawaroti,
-          isSpicy: false,
-          isVegetarian: true
+          
         }
         
         
@@ -222,37 +211,41 @@ const MenuPage = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center mb-12">Our Menu</h1>
-      
+    <div className="container mx-auto px-4 py-12">
+      <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">Our Menu</h1>
       {menuCategories.map((category) => (
-        <div key={category.name} className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6 text-amber-800">{category.name}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div key={category.name} className="mb-16">
+          <h2 className="text-3xl font-semibold mb-8 text-amber-800">{category.name}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {category.items.map((item) => (
-              <div key={item.name} className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div
+                key={item.name}
+                className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-xl duration-300"
+              >
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-40 h-40 object-cover"
+                  className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold">{item.name}</h3>
-                    <span className="text-lg font-semibold text-amber-800">${item.price}</span>
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-xl font-bold text-gray-800">{item.name}</h3>
+                    <span className="text-lg font-semibold text-amber-800">${item.price.toFixed(2)}</span>
                   </div>
-                  <p className="text-gray-600 mb-4">{item.description}</p>
+                  <p className="text-gray-600 text-sm mb-4">{item.description}</p>
                   <div className="flex gap-2">
                     {item.isSpicy && (
-                      <span className="px-2 py-1 bg-red-100 text-red-800 rounded-full text-sm">
+                      <span className="px-2 py-1 bg-red-100 text-red-800 rounded-full text-xs">
                         Spicy
                       </span>
                     )}
-                    <span className={`px-2 py-1 rounded-full text-sm ${
-                      item.isVegetarian 
-                        ? 'bg-green-100 text-green-800'
-                        : 'bg-orange-100 text-orange-800'
-                    }`}>
+                    <span
+                      className={`px-2 py-1 rounded-full text-xs ${
+                        item.isVegetarian
+                          ? 'bg-green-100 text-green-800'
+                          : 'bg-orange-100 text-orange-800'
+                      }`}
+                    >
                       {item.isVegetarian ? 'Veg' : 'Non-Veg'}
                     </span>
                   </div>
@@ -265,5 +258,4 @@ const MenuPage = () => {
     </div>
   );
 };
-
-export default MenuPage;
+export default MenuPage4;
